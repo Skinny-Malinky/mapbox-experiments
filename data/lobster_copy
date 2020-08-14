@@ -1,0 +1,109 @@
+Species,Year,Area,long,lat,Animals_measured,Trips_sampled,Percentage_of_trips_sampled,Percent_total_landings_Scotland
+Brown crab,2013,Clyde,55.79861111,-5.27472222,343,7,3.3,1.5
+Brown crab,2014,Clyde,55.79861111,-5.27472222,267,5,2.1,1.5
+Brown crab,2015,Clyde,55.79861111,-5.27472222,418,6,2.6,1.6
+Brown crab,2013,East Coast,57.5058,-1.7981,4913,25,0.9,11.7
+Brown crab,2014,East Coast,57.5058,-1.7981,6292,36,1.1,10.6
+Brown crab,2015,East Coast,57.5058,-1.7981,6079,32,0.9,10.9
+Brown crab,2013,Hebrides,57.9533,-7.2306,6052,30,2.1,19.6
+Brown crab,2014,Hebrides,57.9533,-7.2306,8838,22,2.1,21.7
+Brown crab,2015,Hebrides,57.9533,-7.2306,5892,24,2.4,20.1
+Brown crab,2013,Mallaig,57.003813,-5.827173,0,0,0,0.1
+Brown crab,2014,Mallaig,57.003813,-5.827173,0,0,0,0.1
+Brown crab,2015,Mallaig,57.003813,-5.827173,0,0,0,0.1
+Brown crab,2013,North Coast,58.55,-4.2,1423,3,1,5.3
+Brown crab,2014,North Coast,58.55,-4.2,1030,1,0.4,4.4
+Brown crab,2015,North Coast,58.55,-4.2,1422,2,0.6,9.2
+Brown crab,2013,Orkney,59.0344,-3.39915,29648,137,5.8,17.6
+Brown crab,2014,Orkney,59.0344,-3.39915,24016,186,7.5,16
+Brown crab,2015,Orkney,59.0344,-3.39915,53372,385,15,18.5
+Brown crab,2013,Papa Bank,59.727778,-3.455,4533,4,4,8.6
+Brown crab,2014,Papa Bank,59.727778,-3.455,4705,3,2,10.1
+Brown crab,2015,Papa Bank,59.727778,-3.455,3651,2,2,8.4
+Brown crab,2013,Shetland,60.19175,-1.42325,2096,17,2,5.6
+Brown crab,2014,Shetland,60.19175,-1.42325,2405,13,1.4,5.4
+Brown crab,2015,Shetland,60.19175,-1.42325,1185,8,1.1,4.1
+Brown crab,2013,South East,55.58713,-2.0901,5025,45,2.4,4.3
+Brown crab,2014,South East,55.58713,-2.0901,5238,41,2,3.2
+Brown crab,2015,South East,55.58713,-2.0901,4474,43,2.1,4.1
+Brown crab,2013,South Minch,57.75,-6.5,676,9,0.7,8
+Brown crab,2014,South Minch,57.75,-6.5,379,4,0.2,9.7
+Brown crab,2015,South Minch,57.75,-6.5,428,4,0.3,6.3
+Brown crab,2013,Sule,59.05765,-4.451467,9365,9,5.2,13.7
+Brown crab,2014,Sule,59.05765,-4.451467,1316,2,1,13.9
+Brown crab,2015,Sule,59.05765,-4.451467,0,0,0,14.8
+Brown crab,2013,Ullapool,57.895418,-5.161313,194,2,0.3,4
+Brown crab,2014,Ullapool,57.895418,-5.161313,0,0,0,3.4
+Brown crab,2015,Ullapool,57.895418,-5.161313,0,0,0,1.9
+Velvet crab,2013,Clyde,55.79861111,-5.27472222,2914,15,10.1,4.3
+Velvet crab,2014,Clyde,55.79861111,-5.27472222,3502,18,9,6.1
+Velvet crab,2015,Clyde,55.79861111,-5.27472222,1870,10,6.2,5.8
+Velvet crab,2013,East Coast,57.5058,-1.7981,1514,10,0.5,10.8
+Velvet crab,2014,East Coast,57.5058,-1.7981,1177,8,0.4,10.1
+Velvet crab,2015,East Coast,57.5058,-1.7981,745,4,0.2,10
+Velvet crab,2013,Hebrides,57.9533,-7.2306,2848,17,1.5,16.5
+Velvet crab,2014,Hebrides,57.9533,-7.2306,2313,16,1.5,17.1
+Velvet crab,2015,Hebrides,57.9533,-7.2306,2403,14,1.7,17.8
+Velvet crab,2013,Mallaig,57.003813,-5.827173,0,0,0,0.4
+Velvet crab,2014,Mallaig,57.003813,-5.827173,73,1,2.3,0.9
+Velvet crab,2015,Mallaig,57.003813,-5.827173,0,0,0,1.4
+Velvet crab,2013,North Coast,58.55,-4.2,0,0,0,0.5
+Velvet crab,2014,North Coast,58.55,-4.2,0,0,0,0.4
+Velvet crab,2015,North Coast,58.55,-4.2,0,0,0,0.5
+Velvet crab,2013,Orkney,59.0344,-3.39915,4100,17,0.8,31.9
+Velvet crab,2014,Orkney,59.0344,-3.39915,9852,46,2.1,31.5
+Velvet crab,2015,Orkney,59.0344,-3.39915,22116,94,4.3,30.8
+Velvet crab,2013,Papa Bank,59.727778,-3.455,0,0,0,0.1
+Velvet crab,2014,Papa Bank,59.727778,-3.455,0,0,0,0
+Velvet crab,2015,Papa Bank,59.727778,-3.455,0,0,0,0
+Velvet crab,2013,Shetland,60.19175,-1.42325,4427,9,1,11.7
+Velvet crab,2014,Shetland,60.19175,-1.42325,4272,10,1.3,9.9
+Velvet crab,2015,Shetland,60.19175,-1.42325,3233,9,1.3,9.2
+Velvet crab,2013,South East,55.58713,-2.0901,509,5,0.3,7.4
+Velvet crab,2014,South East,55.58713,-2.0901,2113,13,0.8,6
+Velvet crab,2015,South East,55.58713,-2.0901,1657,15,0.9,5.4
+Velvet crab,2013,South Minch,57.75,-6.5,1798,11,1,14.7
+Velvet crab,2014,South Minch,57.75,-6.5,649,4,0.3,16.2
+Velvet crab,2015,South Minch,57.75,-6.5,1160,6,0.4,18.1
+Velvet crab,2013,Sule,59.05765,-4.451467,0,0,0,0
+Velvet crab,2014,Sule,59.05765,-4.451467,0,0,0,0
+Velvet crab,2015,Sule,59.05765,-4.451467,0,0,0,0
+Velvet crab,2013,Ullapool,57.895418,-5.161313,228,2,0.7,1.7
+Velvet crab,2014,Ullapool,57.895418,-5.161313,0,0,0,1.8
+Velvet crab,2015,Ullapool,57.895418,-5.161313,0,0,0,1
+Lobster,2013,Clyde,55.79861111,-5.27472222,633,13,4,2.4
+Lobster,2014,Clyde,55.79861111,-5.27472222,244,8,1.9,3.9
+Lobster,2015,Clyde,55.79861111,-5.27472222,231,8,1.9,3.6
+Lobster,2013,East Coast,57.5058,-1.7981,879,17,0.5,21.8
+Lobster,2014,East Coast,57.5058,-1.7981,1608,20,0.5,19.3
+Lobster,2015,East Coast,57.5058,-1.7981,574,11,0.3,23
+Lobster,2013,Hebrides,57.9533,-7.2306,1018,25,1.9,9.9
+Lobster,2014,Hebrides,57.9533,-7.2306,2477,24,2,12.7
+Lobster,2015,Hebrides,57.9533,-7.2306,1832,23,2.2,11.6
+Lobster,2013,Mallaig,57.003813,-5.827173,0,0,0,0.1
+Lobster,2014,Mallaig,57.003813,-5.827173,0,0,0,0.1
+Lobster,2015,Mallaig,57.003813,-5.827173,0,0,0,0.1
+Lobster,2013,North Coast,58.55,-4.2,51,1,0.4,1
+Lobster,2014,North Coast,58.55,-4.2,22,1,0.4,0.9
+Lobster,2015,North Coast,58.55,-4.2,362,2,0.7,1.3
+Lobster,2013,Orkney,59.0344,-3.39915,634,17,0.7,11.9
+Lobster,2014,Orkney,59.0344,-3.39915,1860,56,2.2,14
+Lobster,2015,Orkney,59.0344,-3.39915,6185,173,6.7,11.5
+Lobster,2013,Papa Bank,59.727778,-3.455,209,2,2.7,0.6
+Lobster,2014,Papa Bank,59.727778,-3.455,265,3,2.4,0.7
+Lobster,2015,Papa Bank,59.727778,-3.455,77,2,2.7,0.3
+Lobster,2013,Shetland,60.19175,-1.42325,2123,14,2.2,3.6
+Lobster,2014,Shetland,60.19175,-1.42325,1967,18,3,3.4
+Lobster,2015,Shetland,60.19175,-1.42325,2338,10,1.8,4.1
+Lobster,2013,South East,55.58713,-2.0901,1629,26,0.8,39.4
+Lobster,2014,South East,55.58713,-2.0901,3475,66,1.9,34.9
+Lobster,2015,South East,55.58713,-2.0901,3046,43,1.2,35.2
+Lobster,2013,South Minch,57.75,-6.5,116,6,0.5,7.6
+Lobster,2014,South Minch,57.75,-6.5,103,3,0.2,8.6
+Lobster,2015,South Minch,57.75,-6.5,300,6,0.4,7.9
+Lobster,2013,Sule,59.05765,-4.451467,0,0,0,0.1
+Lobster,2014,Sule,59.05765,-4.451467,0,0,0,0.1
+Lobster,2015,Sule,59.05765,-4.451467,0,0,0,0.1
+Lobster,2013,Ullapool,57.895418,-5.161313,85,1,0.3,1.6
+Lobster,2014,Ullapool,57.895418,-5.161313,0,0,0,1.4
+Lobster,2015,Ullapool,57.895418,-5.161313,0,0,0,1.3

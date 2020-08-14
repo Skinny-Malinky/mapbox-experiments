@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+  <title>Tube Example</title>
+  <script src="https://d3js.org/d3.v5.js" type="text/javascript"></script>
+  <script src="config.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js"></script>
+  <link
+    href="https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css"
+    rel="stylesheet"
+  />
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+    }
+    #map {
+      width: 100%;
+      height: 100%;
+      background-color: #1f1f1f;
+      position: fixed;
+    }
+    .container {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      width: 100%;
+      position:fixed;
+    }
+    .legend {
+      padding: 0.8rem 1.5rem;
+      margin: 1em;
+      background-color: #e1e1e1;
+      border-radius: 0.2rem;
+    }
+    h1,h2,h3 {
+      margin-bottom: 0.5rem;
+      margin-top: 0.1rem;
+    }
+    ul {
+      width: 100%;
+      margin: 0.2em 0;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0.5em 0;
+    }
+    .key-color {
+      width:1em;
+      height: 1em;
+      border-radius: 50%;
+      margin-top: 0.2em;
+      margin-left: 2.5rem;
+    }
+    .lobster {
+      background-color: rgb(236, 153, 58);
+    }
+    .velvet-crab {
+      background-color: rgb(47, 188, 231);
+    }
+    .brown-crab {
+      background-color: rgb(97, 46, 23);
+    }
+  </style>
+</head>
+<body>
+  <div id="map" class="map"></div>
+  <div class="container">
+  <div class="legend">
+    <h2>Legend</h2>
+    <ul>
+    <li>
+    <label for="Brown crab">Brown crab</label><span class="key-color brown-crab"></span>
+    </li>
+  <li>
+    <label for="Velvet crab">Velvet crab</label><span class="key-color velvet-crab"></span>
+  </li>
+    <li>
+    <label for="Lobster">Lobster</label><span class="key-color lobster"></span>
+  </li>
+</ul>
+  </div>
+</div>
+  
+  <script>
+    mapboxgl.accessToken = config.accessToken;
+    var origin = [-4.07472222,55.79861111, 0];
+    var map = new mapboxgl.Map({
+      container: "map",
+      style: "mapbox://styles/struanfraser/ckbxmg3u028071ips08qy6b65",
+      center: origin,
+      type: "geojson",
+      zoom: 6.5,
+      pitch: 60,
+      heading: 41,
+    });
+
+    var geoData = {
+      type: "FeatureCollection",
+      features:[]
+    };
+    const latGirth = 0.01;
+    const longGirth = 0.005;
+    d3.csv("data/lobster.csv").then(function (data) {
+      data.forEach((d) => {
+        let extColor;
+        let posMod;
+        let distance = 0.01;
+        if (d.Year==2015) {
+          switch (d.Species) {
+            case 'Brown crab':
+              extColor = 'rgb(97, 46, 23)';
+              posMod = -0.02-distance;
+              break;
+            case 'Velvet crab':
+              extColor = 'rgb(47, 188, 231)';
+              posMod = -0.04-distance*2;
+              break;
+            case 'Lobster':
+              extColor = 'rgb(236, 153, 58)';
+              posMod = -0.06-distance*3;
+              break;
+            default:
+              extColor = 'red';
+              posMod = -0.08-distance*4;
+              break;
+          }
+        geoData.features.push({
+          type: "Feature",
+          properties: {
+            level: 1,
+            height: parseInt(d.Animals_measured*2),
+            base_height: 0,
+            color: extColor
+          },
+          geometry: {
+            coordinates: [
+              [
+                [parseInt(d.lat) + latGirth + posMod, parseInt(d.long) - longGirth],
+                [parseInt(d.lat) - latGirth + posMod, parseInt(d.long) - longGirth],
+                [parseInt(d.lat) - latGirth + posMod, parseInt(d.long) + longGirth],
+                [parseInt(d.lat) + latGirth + posMod, parseInt(d.long) + longGirth],
+                [parseInt(d.lat) + latGirth + posMod, parseInt(d.long) - longGirth]
+              ]
+            ],
+            type: "Polygon"
+          }
+        });
+      }
+      });
+    });
+    map.on('load', function() {
+      console.log(geoData)
+      map.addSource("floorplan", {
+        // GeoJSON Data source used in vector tiles, documented at
+        // https://gist.github.com/ryanbaumann/a7d970386ce59d11c16278b90dde094d
+        type: "geojson",
+        data: geoData
+      });
+      map.addLayer({
+            id: "room-extrusion",
+            type: "fill-extrusion",
+            source: "floorplan",
+            paint: {
+              "fill-extrusion-color": ["get", "color"],
+              "fill-extrusion-height": ["get", "height"],
+              "fill-extrusion-base": ["get", "base_height"],
+              "fill-extrusion-opacity": 1
+            }
+          });
+      });
+      // console.log('promise success');
+    // }, console.log('promise error'));
+    
+    // [-77.0323, 38.9131],
+
+    
+  </script>
+</body>
+</html>
