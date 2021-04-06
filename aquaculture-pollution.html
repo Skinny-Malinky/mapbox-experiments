@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <title>Tube Example</title>
+  <script src="https://d3js.org/d3.v6.min.js" type="text/javascript"></script>
+  <script src="./utm/index.es.js" type="text/javascript"></script>
+  <script src="config.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js"></script>
+  <link
+    href="https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css"
+    rel="stylesheet"
+  />
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+    }
+    #map {
+      width: 100%;
+      height: 100%;
+      background-color: #1f1f1f;
+      position: fixed;
+    }
+    .container {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      width: 100%;
+      position:fixed;
+    }
+    .legend {
+      padding: 0.8rem 1.5rem;
+      margin: 1em;
+      background-color: #e1e1e1;
+      border-radius: 0.2rem;
+    }
+    h1,h2,h3 {
+      margin-bottom: 0.5rem;
+      margin-top: 0.1rem;
+    }
+    ul {
+      width: 100%;
+      margin: 0.2em 0;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0.5em 0;
+    }
+    .key-color {
+      width:1em;
+      height: 1em;
+      border-radius: 50%;
+      margin-top: 0.2em;
+      margin-left: 2.5rem;
+    }
+    .lobster {
+      background-color: rgb(236, 153, 58);
+    }
+    .velvet-crab {
+      background-color: rgb(47, 188, 231);
+    }
+    .brown-crab {
+      background-color: rgb(97, 46, 23);
+    }
+  </style>
+</head>
+<body>
+  <div id="map" class="map"></div>
+  <div class="container">
+  <div class="legend">
+    <h2>Number of fish mortalities(kg) on aquaculture sites in Sept 2020</h2>
+    <!-- <ul>
+    <li>
+    <label for="Brown crab">Brown crab</label><span class="key-color brown-crab"></span>
+    </li>
+</ul> -->
+  </div>
+</div>
+<script src="sketch.js"></script>
+</body>
+</html>
